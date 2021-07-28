@@ -1,0 +1,922 @@
+##################################################################################
+#                    Traducción al español por FranMC23
+#      Esta traducción es proporcionada por un miembro de la comunidad. <3
+##################################################################################
+Pets:
+  Sun:
+    Enabled: true
+    #Permission to use this pet. If "none" no permission will be required for this pet.
+    Permission: "betterpets.pets.sun"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5MDQyMDgyYmI3YTc2MThiNzg0ZWU3NjA1YTEzNGM1ODgzNGUyMWUzNzRjODg4OTM3MTYxMDU3ZjZjNyJ9fX0="
+    #Food the pet will eat from your inventory.
+    #Set to "none" to not use a food. Remember that if you set "Favorite-food" to "none" and "Cooldown" to 0
+    #Players will be able to use pets without cost or delay. CAREFUL!
+    Favorite-food: "CLOCK"
+    #Amount of times pet can be used per eaten food. Range: 1 - 64
+    #Recommended to use 1.
+    Uses-per-food: 1
+    #Time in seconds between uses. Recommended to leave in 300 (5 minutes)
+    #Set to 0 to disable.
+    Cooldown: 10
+    Displayname: "&e&lSunny"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eCambia el tiempo a díay."
+    Recipe:
+      Enabled: true
+      Title: "&8Sun pet recipe"
+      Ingredients:
+        E: "DIAMOND_BLOCK"
+        C: "CLOCK"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "CEC"
+      - "CDC"
+      - "CGC"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    #Pet will be replaced with the name of the pet defined IN THIS CONFIG FILE. NOT RENAMED DISPLAYNAME.
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Only-at-night: "{PET}&f: &eNo no no! No puede cambiar el día porque ya es de día.."
+    #Message sent if pet is used successfully with right click or it reacts to an event.
+    Changed-to-day: "{PET}&f: &eYummy yummy! Es de día de nuevo!"
+    Time-is-changing: "{PET}&f: &eParece que el tiempo esta cambiando!"
+    Pet-ready: "{PET}&f: &eDemasiado oscuro para tus ojos? Estoy listo!"
+    Pet-cooldown: "{PET}&f: &eNo no no. No aún prueba en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! El tiempo no existe en esta dimensión :("
+    Disabled-worlds:
+    - "world_the_end"
+    - "world_nether"
+    - "world_no_pets"
+  Moon:
+    Enabled: true
+    Permission: "betterpets.pets.moon"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdkNjhiYjE0NGUxNTlmZmRiMGJiMmFiZGQ1ODNmZjM4OWFlNzEwNjgyY2E3N2U2NTM1MzkzYWUyMjEzN2EifX19"
+    Favorite-food: "CLOCK"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&8&lMoony"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eCambia el tiempo."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la luna"
+      Ingredients:
+        E: "EMERALD_BLOCK"
+        C: "CLOCK"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "CEC"
+      - "CDC"
+      - "CGC"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Only-at-day: "{PET}&f: &eNo no no! No puedo cambiar de noche ya es de noche.."
+    Changed-to-night: "{PET}&f: &eYummy yummy! Es de noche ahora!"
+    Time-is-changing: "{PET}&f: &eParece que el tiempo está cambiando!"
+    Pet-ready: "{PET}&f: &eMuy brillantes tus ojos? Estoy listo!"
+    Pet-cooldown: "{PET}&f: &eNo no no. No aún, prueba en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! El tiempo no existe en esta dimensión :("
+    Disabled-worlds:
+    - "world_the_end"
+    - "world_nether"
+    - "world_no_pets"
+  Chicken:
+    Enabled: true
+    Permission: "betterpets.pets.chicken"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAyNmM5ZjYxZjg1YjFlZTNlNjRiM2M0YWRjYTBhMDI3ZTg5ZmIxZjMwMTk0ZjQyYmNkZmMyOGFkMGQyOTQifX19"
+    #Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUyODBjZWZlOTQ2OTExZWE5MGU4N2RlZDFiM2UxODMzMGM2M2EyM2FmNTEyOWRmY2ZlOWE4ZTE2NjU4ODA0MSJ9fX0="
+    Favorite-food: "SEEDS"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&f&lEggstein"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eObten una chance de tener"
+    - "&eun huevo, una pluma o nada.."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Pollo"
+      Ingredients:
+        S: "SEEDS"
+        E: "EGG"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "ESE"
+      - "EDE"
+      - "EGE"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    #Message sent if pet is used successfully with right click or it reacts to an event.
+    Pet-used: "{PET}&f: &eBuck buck! Eres un hombre de suerte.. o tal vez no.."
+    Pet-ready: "{PET}&f: &eNecesitas ingredientes para un torta? Estoy listo!"
+    Pet-cooldown: "{PET}&f: &eNo no no. No aún, prueba en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No puedo hacer eso en esta dimensión. :("
+    #Only if server is at least 1.13 | Change of 50% to add SLOW_FALLING to the player.
+    Pet-effect: "{PET}&f: &eNope! No tengo hambre en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Cow:
+    Enabled: true
+    Permission: "betterpets.pets.cow"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJjNGY3NDc3ZDZiNTk2OWRiNGM4MWEzMWIxY2I3ZTZmMzczMGRlMTliNTBmNzhjOTYyMTdiOWQzOTJmMDk3YiJ9fX0="
+    Favorite-food: "MILK_BUCKET"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&d&lPetunia"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eRemueve toods los efectos negativos."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Vaca"
+      Ingredients:
+        M: "MILK_BUCKET"
+        H: "HAY_BLOCK"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "MHM"
+      - "MDM"
+      - "MGM"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eEfectos negativos? Estoy listo!"
+    Pet-ready: "{PET}&f: &eMuuu! Listo para devorar los efectos negativos!"
+    Pet-cooldown: "{PET}&f: &eEstoy comiendo algo de trigo, prueba de nuevo en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo estar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Mushroom:
+    Enabled: true
+    Permission: "betterpets.pets.mushroom"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFiNTUzMGUzYmQ3MmJlMmQ1MjFlYzEyYTZhYjQzMWE1MzNhMWMxNzc1YTY0MmE2ZWY4YTNjY2EzYmU4NzY0ZiJ9fX0="
+    #You can change this to "DIAMOND" if you think its too OP.
+    Favorite-food: "RED_MUSHROOM"
+    Uses-per-food: 1
+    #This actually cancel consume event and increases food level + saturation. Disable if you have problems or conflicts with other plugins.
+    Refill: true
+    Cooldown: 10
+    Displayname: "&c&lSopito"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eObten buenos/malos efectos cuando"
+    - "&ecomes sopas de vaca."
+    - "&eRellena los bowls cuando"
+    - "&econsumes sopas."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Vacasetas"
+      Ingredients:
+        M: "RED_MUSHROOM"
+        A: "GOLDEN_APPLE"
+        H: "BLAZE_POWDER"
+        T: "GHAST_TEAR"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "AMA"
+      - "HDH"
+      - "TGT"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eGracias! Estuve un poco ambriento! Te voy a dar un par de efectos!"
+    Pet-ready: "{PET}&f: &eMuuu! Listo para trabajar!"
+    Pet-cooldown: "{PET}&f: &eEstoy comiendo un poco de sopa, prueba de nuevo en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo estar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Cat:
+    Enabled: true
+    Permission: "betterpets.pets.cat"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ExMjE4ODI1ODYwMWJjYjdmNzZlM2UyNDg5NTU1YTI2YzBkNzZlNmVmZWMyZmQ5NjZjYTM3MmI2ZGRlMDAifX19"
+    Favorite-food: "RAW_FISH"
+    Uses-per-food: 1
+    Cooldown: 60
+    #Time in seconds for Speed III.
+    Boost: 10
+    Displayname: "&d&lSilvestre"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eObten velocidad de movimiento."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Gatos"
+      Ingredients:
+        R: "RAW_FISH"
+        F: "COOKED_FISH"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "RFR"
+      - "RDR"
+      - "RGR"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eObtuviste un boost de velocidad! Ve por él!"
+    Pet-ready: "{PET}&f: &ePurr.. Necesitas ir más rápido? Estoy listo!"
+    Pet-cooldown: "{PET}&f: &eEstoy jugando con este hilo ahora, espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo estar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Bat:
+    Enabled: true
+    Permission: "betterpets.pets.bat"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgyMGExMGRiMjIyZjY5YWMyMjE1ZDdkMTBkY2E0N2VlYWZhMjE1NTUzNzY0YTJiODFiYWZkNDc5ZTc5MzNkMSJ9fX0="
+    Favorite-food: "GOLDEN_CARROT"
+    Uses-per-food: 1
+    Cooldown: 10
+    #Time in seconds for Night vision.
+    Boost: 60
+    Displayname: "&8&lVladimir"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eObten visión nocturna."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Murcielago"
+      Ingredients:
+        C: "GOLDEN_CARROT"
+        F: "FERMENTED_SPIDER_EYE"
+        R: "REDSTONE"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "FCF"
+      - "FDF"
+      - "RGR"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eEsta todo claro ahora? Mejor!"
+    Pet-ready: "{PET}&f: &eNo puedes ver en la oscuridad? Estoy listo!"
+    Pet-cooldown: "{PET}&f: &eEstoy un poco exhausto, prueba de nuevo en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo estar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Rabbit:
+    Enabled: true
+    Permission: "betterpets.pets.rabbit"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThhNGZiMjVhZmJjNmI3YWVjMTVhYmU4NzJmY2VhZDFlNWIzM2MxYWIxMjUyNTE0MWQ3N2JmZDI5OGZjMzJkOSJ9fX0="
+    Favorite-food: "CARROT_ITEM"
+    Uses-per-food: 1
+    Cooldown: 10
+    #Time in seconds for Jump III.
+    Boost: 15
+    Displayname: "&f&lSnowflake"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eObten salto elevadot."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo del Gato"
+      Ingredients:
+        R: "RABBIT_HIDE"
+        C: "CARROT_ITEM"
+        F: "RABBIT_FOOT"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "CFC"
+      - "RDR"
+      - "RGR"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eObtuviste salto elevado, vamos a hacerlo!!"
+    Pet-ready: "{PET}&f: &ePurr.. Necesitas algo más grande? estoy listo!"
+    Pet-cooldown: "{PET}&f: &eEstoy jugando con esta zanahoria, espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo estar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Pig:
+    Enabled: true
+    Permission: "betterpets.pets.pig"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMzYzUxNmE2YmM5Zjc1MjM5YTYyYzFhMjc2YzgyNTYwNGI4NzI5MDRmMmE4NzgwYmFmY2VlODA5MTE2ODQxNCJ9fX0="
+    Favorite-food: "CARROT_ITEM"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&d&lPiggy"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eObten saturación adicional."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota Chancho"
+      Ingredients:
+        H: "HAY_BLOCK"
+        C: "CARROT_ITEM"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "HCH"
+        - "HDH"
+        - "HGH"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eOink oink! Ganaste más saturación ahora puedes correr saltar o lo que quieras!"
+    Pet-ready: "{PET}&f: &eOink oink! No más comida? Quiero más!"
+    Pet-cooldown: "{PET}&f: &eEstoy un poco tirado. Espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eOink! No puedo estar aquí. Cuidado!"
+    Disabled-worlds:
+      - "world_no_pets"
+  Sheep:
+    Enabled: true
+    Permission: "betterpets.pets.sheep"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk3MTllYzllZTZmNTNjMTdiMWY2Zjc0Nzg2NmIzMTIxNDAxZDM1Zjc3YTM5ODU5ZjEyMmQ0NzI4NjNlNDhlIn19fQ=="
+    Favorite-food: "WHEAT"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&f&lLana"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eObten hilo o lana."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota Oveja"
+      Ingredients:
+        W: "WOOL"
+        T: "WHEAT"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "WTW"
+        - "WDW"
+        - "WGW"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eTic tic! Aquí tienes algo de lana, o hilos...."
+    Pet-ready: "{PET}&f: &eBoing boing! Listo para esquilar!"
+    Pet-cooldown: "{PET}&f: &eSoy una mascota de lana, utiliza {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No puedo ser compartido en esta dimensión."
+    Disabled-worlds:
+    - "world_no_pets"
+  Workbench:
+    Enabled: true
+    Permission: "betterpets.pets.workbench"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNkYzBmZWI3MDAxZTJjMTBmZDUwNjZlNTAxYjg3ZTNkNjQ3OTMwOTJiODVhNTBjODU2ZDk2MmY4YmU5MmM3OCJ9fX0="
+    Favorite-food: "WOOD"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&1&lCrafty"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eAbre una mesa de crafteo."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota de Crafteo"
+      Ingredients:
+        C: "CHEST"
+        W: "WORKBENCH"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "WCW"
+      - "WDW"
+      - "WGW"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eTrabajo trabajo! Vamos a craftear items!"
+    Pet-ready: "{PET}&f: &eEstoy listo para craftear items contigo!"
+    Pet-cooldown: "{PET}&f: &eEstoy crafteando algunos items. Usa {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNooo! No puedes craftear items aquí :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Ender-chest:
+    Enabled: true
+    Permission: "betterpets.pets.enderchest"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ=="
+    Favorite-food: "EYE_OF_ENDER"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&3&lEnder Chesty"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eAbre tu cofre de ender en cualquier lado."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota del Cofre de Ender"
+      Ingredients:
+        E: "EYE_OF_ENDER"
+        O: "OBSIDIAN"
+        C: "ENDER_CHEST"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "ECE"
+      - "ODO"
+      - "OGO"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eEso es! Aquí están tus items."
+    Pet-ready: "{PET}&f: &eSi! Listo para comer tus items!"
+    Pet-cooldown: "{PET}&f: &eEstoy ocupado ordenando items, estaré listo en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedes abrir el cofre de ender aquí :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Enchanting-table: #THIS PET IS ONLY AVAILABLE IN 1.11 AND NEWER!
+    Enabled: true
+    Permission: "betterpets.pets.enchantingtable"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJmNzkwMTZjYWQ4NGQxYWUyMTYwOWM0ODEzNzgyNTk4ZTM4Nzk2MWJlMTNjMTU2ODI3NTJmMTI2ZGNlN2EifX19"
+    Favorite-food: "PAPER"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&5&lEnchanty"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eAbre una mesa de crafteo portable."
+    Recipe:
+      Enabled: true
+      Title: "&8cCrafteo Mascota de Encantamientos"
+      Ingredients:
+        E: "ENCHANTING_TABLE"
+        B: "BOOK"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "BEB"
+      - "BDB"
+      - "BGB"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eClank clank! Dejame crear items mágicos!"
+    Pet-ready: "{PET}&f: &eEstoy listo para encnatar items!"
+    Pet-cooldown: "{PET}&f: &eEstoy checkenado nuevos encantamientos. Usalo en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo encantar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Silverfish:
+    Enabled: true
+    Permission: "betterpets.pets.silverfish"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE5MWRhYjgzOTFhZjVmZGE1NGFjZDJjMGIxOGZiZDgxOWI4NjVlMWE4ZjFkNjIzODEzZmE3NjFlOTI0NTQwIn19fQ=="
+    Favorite-food: "STONE"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&7&lStony"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eProtejete de la sofocación."
+    Recipe:
+      Enabled: true
+      Title: "&8Silverfish pet recipe"
+      Ingredients:
+        V: "GRAVEL"
+        I: "IRON_BLOCK"
+        B: "STONE_BRICKS"
+        S: "STONE"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "VIS"
+      - "BDB"
+      - "SGV"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eIntentando sofocarte en un muro no es una buena idea. Lo haré!"
+    Pet-ready: "{PET}&f: &eListo! listo! listo! listo para atascarme en los muros.."
+    Pet-cooldown: "{PET}&f: &eLa ultima vez me asuste mucho, prueba de nuevo {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo estar en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Slime:
+    Enabled: true
+    Permission: "betterpets.pets.slime"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YWVlYzZiODQyYWRhODY2OWY4NDZkNjViYzQ5NzYyNTk3ODI0YWI5NDRmMjJmNDViZjNiYmI5NDFhYmU2YyJ9fX0="
+    Favorite-food: "SLIME_BALL"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&a&lBubble"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eIgnora el daño por caida."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota Slime "
+      Ingredients:
+        S: "SLIME_BLOCK"
+        U: "SUGAR"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "SUS"
+      - "SDS"
+      - "SGS"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eBoing boing! Esto es un salto no te preocupes!"
+    Pet-ready: "{PET}&f: &eBoing boing! Ready for falls!"
+    Pet-cooldown: "{PET}&f: &eEstoy un poco cansado. Estaré en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eBoing! No te puedo ayudar, ten cuidado!"
+    Disabled-worlds:
+    - "world_no_pets"
+  Squid:
+    Enabled: true
+    Permission: "betterpets.pets.squid"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDljMmM5Y2U2N2ViNTk3MWNjNTk1ODQ2M2U2YzlhYmFiOGU1OTlhZGMyOTVmNGQ0MjQ5OTM2YjAwOTU3NjlkZCJ9fX0="
+    Favorite-food: "RAW_FISH"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&1&lInky"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eTe da oxigeno cuando te estas ahogando."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Calamar"
+      Ingredients:
+        R: "RAW_FISH"
+        L: "GLOWSTONE_DUST"
+        W: "WATER_BUCKET"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "LRL"
+      - "WDW"
+      - "WGW"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eSquish squish! Wow! Esto estuvo cerca, toma un poco de acceso."
+    Pet-ready: "{PET}&f: &eSiii... necesitas un poco de oxigeno? Estoy listo!"
+    Pet-cooldown: "{PET}&f: &eEstoy coleccionando oxigeno para tí, espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No está permitido la ayuda en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Creeper:
+    Enabled: true
+    Permission: "betterpets.pets.creeper"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc5ZjEwYTk1OTU0ZDIwNWY2YjA5M2I4NjY1NTgwYmRiMTdkMDIxZGQ0NmY0MTFmOWRjZTc0OWMzNGU0ZTE4ZCJ9fX0="
+    Favorite-food: "SULPHUR"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&2&lBomby"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eProtejete de las explosiones."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota Creeper "
+      Ingredients:
+        S: "SULPHUR"
+        F: "FLINT"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "SFS"
+      - "SDS"
+      - "SGS"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eWow! Eso estuvo cerca, comi la explosion. Yummy!"
+    Pet-ready: "{PET}&f: &eEstoy listo! Listo para las explosiones!"
+    Pet-cooldown: "{PET}&f: &eEstoy comprando algo de TNT, Estaré de vuelta en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &ePsss! No te puedo ayudar en esta dimensión, estás solo."
+    Disabled-worlds:
+    - "world_no_pets"
+  Magma-cube:
+    Enabled: true
+    Permission: "betterpets.pets.magmacube"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0="
+    Favorite-food: "MAGMA_CREAM"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&4&lMagmy"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eProtejete sobre el fuego."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota de Magma "
+      Ingredients:
+        M: "MAGMA_CREAM"
+        L: "GLOWSTONE_DUST"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "MLM"
+        - "MDM"
+        - "MGM"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eEso estuvo cerca! Somos inmune al fuego, por ahora."
+    Pet-ready: "{PET}&f: &ePreparado para protegerte del fuego!"
+    Pet-cooldown: "{PET}&f: &eNo estoy hambriento por ahora, espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No estoy disponible en este mundo :("
+    Disabled-worlds:
+      - "world_no_pets"
+  Wolf:
+    Enabled: true
+    Permission: "betterpets.pets.wolf"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTczM2Y4N2NjY2MwODc4ZDcwNmQ3N2Y2NmE3YTk4ZWVkNDU4MzIzMjM5NDhmYmY1YmJkYWJlNDkzY2U3ZmI2NyJ9fX0="
+    Favorite-food: "BONE"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&7&lMagnus"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eObten un par de puntos extra"
+    - "&ede comida cuando comes."
+    Recipe:
+      Enabled: true
+      Title: "&8Wolf pet recipe"
+      Ingredients:
+        B: "RAW_BEEF"
+        N: "BONE"
+        R: "ROTTEN_FLESH"
+        H: "RAW_CHICKEN"
+        P: "PORK"
+        T: "RABBIT"
+        M: "MUTTON"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "BNR"
+      - "HDP"
+      - "TGM"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eSabes que amo los huesos! Un par de puntos extra para tí!"
+    Pet-ready: "{PET}&f: &eWoff woff.. Me estoy sintiendo ambriento, algo de comer?"
+    Pet-cooldown: "{PET}&f: &eYa estoy comiendo, espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNoo! No puedo ser usado en esta dimensión"
+    Disabled-worlds:
+    - "world_no_pets"
+  Zombie:
+    Enabled: true
+    Permission: "betterpets.pets.zombie"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIxNTMxYzA0ZTI1ZDdmYTY0NTc2OTgyNjg0OTFjYjg5NmQzMzAyZDI2ODg0ZmNmZGYxYTBiMmY5MmQ3N2M4ZiJ9fX0="
+    Favorite-food: "COOKIE"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&2&lBrainiac"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&ePrevents hunger effects"
+    - "&ewhen eating rotten flesh"
+    - "&eand add some random effects."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota Zombie "
+      Ingredients:
+        B: "RAW_BEEF"
+        C: "COOKIE"
+        R: "ROTTEN_FLESH"
+        H: "RAW_CHICKEN"
+        P: "PORK"
+        T: "RABBIT"
+        M: "MUTTON"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "BCR"
+      - "HDP"
+      - "TGM"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eLo amo, parece que tú también lo amas!"
+    Pet-ready: "{PET}&f: &eArggg.. Me estoy sintiendo un poco hambriento; que tienes para comer?"
+    Pet-cooldown: "{PET}&f: &eYa comi demasiado, espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No puedo ser usado en esta dimensión :("
+    Disabled-worlds:
+    - "world_no_pets"
+  Iron-golem:
+    Enabled: true
+    Permission: "betterpets.pets.irongolem"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY5ZDBkNDcxMTE1M2EwODljNTU2N2E3NDliMjc4NzljNzY5ZDNiZGNlYTZmZGE5ZDZmNjZlOTNkZDhjNDUxMiJ9fX0="
+    Favorite-food: "IRON_BLOCK"
+    Uses-per-food: 1
+    Cooldown: 10
+    #Amount of hearts added. (Can be only even numbers)
+    Shield: 10
+    Boost: 30
+    Displayname: "&7&lGollum"
+    Lore:
+    - "&7Comida Favorita: &f{FOOD}"
+    - "&eTe da un escudo temporalmente."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la mascota de Iron Golem "
+      Ingredients:
+        I: "IRON_BLOCK"
+        P: "PUMPKIN"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+      - "IPI"
+      - "IDI"
+      - "IGI"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eBling bling! Tendre el escudo en unos segundos, haz la cuenta!"
+    Pet-ready: "{PET}&f: &eSi master! Preparado para protegerte!"
+    Pet-cooldown: "{PET}&f: &eEstoy cargando un nuevo escudo para ti. Recien en {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eMaster! No puedo ser usado en esta dimensión. !"
+    Disabled-worlds:
+    - "world_no_pets"
+  Wither:
+    Enabled: true
+    Permission: "betterpets.pets.wither"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUyODBjZWZlOTQ2OTExZWE5MGU4N2RlZDFiM2UxODMzMGM2M2EyM2FmNTEyOWRmY2ZlOWE4ZTE2NjU4ODA0MSJ9fX0="
+    Favorite-food: "COAL_BLOCK"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&8&lWhitery"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eTe proteje de los efectos de Wither."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de la Mascota de Wither"
+      Ingredients:
+        W: "WITHER_SKELETON_SKULL"
+        N: "NETHER_STAR"
+        C: "COAL_BLOCK"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "NWN"
+        - "CDC"
+        - "CGC"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eYummy! I love eating wither effect. Sorry, did you need it?"
+    Pet-ready: "{PET}&f: &eReady to devour wither effects!"
+    Pet-cooldown: "{PET}&f: &eNo tengo hambre ahora mismo. Espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo ser usado en esta dimensión :("
+    Disabled-worlds:
+      - "world_no_pets"
+  Totem:
+    Enabled: true
+    Permission: "betterpets.pets.totem"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFkMWNmMjg5MTY1ZmJiMTEyZDg5MjFkNDc3MDhlNDlmYjcwOTI1NzM5YjFjYmQxNzk4ZGFmZjQyMjgwNmU4YSJ9fX0="
+    Favorite-food: "TOTEM"
+    Uses-per-food: 1
+    Cooldown: 10
+    Displayname: "&d&lUndying"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eTe protege de la muerte."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo del Totem "
+      Ingredients:
+        T: "TOTEM"
+        N: "NETHER_STAR"
+        B: "DIAMOND_BLOCK"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "NTN"
+        - "BDB"
+        - "BGB"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eYummy! Totems taste so good. By the way, I saved your life.."
+    Pet-ready: "{PET}&f: &eI'm ready to eat some totems, make sure you have some.."
+    Pet-cooldown: "{PET}&f: &eNo estoy disponible. Espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No voy a trabajar en esta dimensión :("
+    Disabled-worlds:
+      - "world_no_pets"
+  Dynamite:
+    Enabled: true
+    Permission: "betterpets.pets.dynamite"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRhMzMyYWJkZTMzM2ExNWE2YzZmY2ZlY2E4M2YwMTU5ZWE5NGI2OGU4ZjI3NGJhZmMwNDg5MmI2ZGJmYyJ9fX0="
+    Favorite-food: "TNT"
+    Uses-per-food: 1
+    Cooldown: 10
+    #Fuse ticks before explosion. Min 0.
+    #This is in ticks. 20 ticks = 1 second. CAUTION.
+    Fuse-ticks: 60
+    Displayname: "&4&lDynamite"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eSpawnea TNT donde estás."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Dynamite"
+      Ingredients:
+        T: "TNT"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "TTT"
+        - "TDT"
+        - "TGT"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &ePrecaución! La TNT puede estar cerca.."
+    Pet-ready: "{PET}&f: &eEstoy listo para algunas explosiones, ten cuidado.."
+    Pet-cooldown: "{PET}&f: &eEstoy buscando un poco de NTT. Espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNope! No voy a trabajar en esta dimensión :("
+    Disabled-worlds:
+      - "world_no_pets"
+  Inby:
+    Enabled: true
+    Permission: "betterpets.pets.inby"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE3MjVlMjRmMWJhZWYyZGQyM2RjNzZjZmY2Y2VlNTc3YzI5ZTc4ZDY3Y2UxMjRlYzdlYjI3OWM2ZTc3NTU1NSJ9fX0="
+    Favorite-food: "GOLDEN_CARROT"
+    Uses-per-food: 1
+    Cooldown: 10
+    #Time in seconds for invisibility effect.
+    Boost: 15
+    #Display particles?
+    Particles: true
+    Displayname: "&f&lInby"
+    Lore:
+      - "&7Comida Favorita: &f{FOOD}"
+      - "&eGana invisibilidad por un corto periodo."
+    Recipe:
+      Enabled: true
+      Title: "&8Crafteo de Dynamite"
+      Ingredients:
+        C: "GOLDEN_CARROT"
+        P: "POTION"
+        D: "DIAMOND"
+        G: "GOLD_BLOCK"
+      Shape:
+        - "CCC"
+        - "PDP"
+        - "PGP"
+    Cannot-recipe: "&cNo tienes permitido ver este crafteo :("
+    Cannot-craft: "&cNo tienes permitido craftear esta mascota :("
+    Not-permission: "&cNo tienes permiso para usar esta mascota :("
+    Not-enough-food: "&cTu mascota no pudo encontrar comida en tu inventario :("
+    Not-enough-food-self: "{PET}&f: &cNo pude encontrar comida en el inventario :("
+    Pet-used: "{PET}&f: &eAhora eres invisible ^^"
+    Pet-ready: "{PET}&f: &eEstoy listo para esconderte maestro, pero se sigiloso."
+    Pet-cooldown: "{PET}&f: &eEstoy buscando alguna poción. Espera {TIME}!"
+    Pet-disabled-world: "{PET}&f: &eNop! No puedo ser usado en esta dimensión, prueba más tarde :("
+    Disabled-worlds:
+      - "world_no_pets"
