@@ -1,0 +1,108 @@
+# Version 0.6-BETA
+#            ___      _   _           ___     _                      Our plugins: https://alonsoaliaga.com/plugins
+#           | _ ) ___| |_| |_ ___ _ _| _ \___| |_ ___                Support server: https://alonsoaliaga.com/discord
+#           | _ \/ -_)  _|  _/ -_) '_|  _/ -_)  _(_-<                Youtube: https://alonsoaliaga.com/play
+#           |___/\___|\__|\__\___|_| |_| \___|\__/__/                Test server: plugins.alonsoaliaga.com
+#                          by AlonsoAliaga                           Twitch: https://alonsoaliaga.com/twitch
+#      Considering donating? https://alonsoaliaga.com/donate         Thanks for using my plugin! <3
+Messages:
+  No-permission: "&cYou don't have permission to do this."
+  Cannot-stacked: "&cYou cannot use stacked pets.."
+  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
+  Invalid-player: "&cPlayer is not online!"
+  Only-main-hand: "&cPets can be used only in main hand!"
+  Corrupted-or-illegal: "&cLooks like this pet is corrupted or illegal. Delete it immediately!"
+  Pet-disabled: "&cThis pet has been disabled by administrators :("
+  Max-pets-reached: "&cYou can have up to {AMOUNT} pets in your hotbar :("
+  Unknown-error-crafting: "&cSomething weird occurred. Contact an administrator!"
+  Recipe-disabled: "&cThis pet cannot be crafted anymore :("
+  Recipe-not-enabled: "&cThis pet cannot be crafted :("
+  No-pets-enabled: "&cLooks like there aren't pets enabled. If you think it's an error, contact an administrator! :("
+  Craft:
+    Craft-no-permission: "&cYou don't have permission to craft pets :("
+    Cannot-shift: "&cYou cannot craft pets while holding shift."
+  Usage:
+    Pet-on-cooldown: "&cYou need to wait {TIME} to use this pet again :("
+    Use-no-permission: "&cYou don't have permission to use pets :("
+    Pet-ready: "&6This pet is ready to help you :)"
+    Cannot-use-region: "&cYou cannot use pets in this region :("
+  Give:
+    Invalid-pet: "&cPet name is not valid!"
+    Gave-pet: "&aYou gave {TARGET} pet called {PET}&a type {PET_TYPE}!"
+    Received-pet: "&6You received a pet called {PET}&a!"
+  Recipe:
+    Opened-gui-other: "&6You opened pets gui for {TARGET}."
+    Recipe-no-permission: "&cYou don't have permission to view pets recipes :("
+    Favorite-food-self: "{PET}&f: &aMy favorite food is {FOOD}. I eat every {TIME} uses!"
+    Favorite-food-self-each: "{PET}&f: &aMy favorite food is {FOOD}. I eat each time!"
+  Help:
+    User:
+    - "&5 /betterpets pets &f- &dOpen pets GUI"
+    - "&5 /betterpets help &f- &dDisplays this message"
+    Admin:
+    - "&5 /betterpets pets <player> &f- &dOpen pets GUI for player"
+    - "&5 /betterpets give <player> <pet> &f- &dGive pet to player"
+    - "&5 /betterpets reload &f- &dReload configuration"
+    - "&5 /betterpets help &f- &dDisplays this message"
+
+#Permissions required for specific actions. If "none" action will not require a permission.
+#Admin permission is always required, even if "none".
+Permissions:
+  Admin: "betterpets.admin"
+  #Required to open pet recipes. (Even if you have pet permission, you require this permission to open recipe)
+  Recipe: "none" #Example: "betterpets.recipe"
+  Craft: "none" #Example: "betterpets.craft"
+  Use: "none" #Example: "betterpets.use"
+  #Permission to open pets GUI.
+  Pet: "none" #Example: "betterpets.pet"
+  #Permission to open pets GUI when closing pet recipe inventory.
+  Auto-open: "none" #Example: "betterpets.auto-open"
+
+Options:
+  #Enable only if developer asks you to do it. It will spam a lot.
+  Debug-mode: false
+  #Max amount of pets in hotbar. Range between 1 - 9.
+  #If X is 8 or less, then only the first X pets in the hotbar will be available.
+  Max-pets: 3
+  #If enabled, recipes for pets you don't have unlocked (with permission) will be displayed as Locked Pet.
+  Hide-recipes: true
+  Gui-title: "&8Pets available"
+  #If enabled, all empty slots in recipe inventory will be filled with specified item.
+  Fill-empty-slots: true
+  WorldGuard:
+    Warning:
+    - "Default flag:"
+    - " This is the default behavior if the flag is not specified BUT you are inside in a WorldGuard region."
+    - "  true - Players can use pets/pets can active on triggers."
+    - "  false -Players cannot use pets/pets cannot active on triggers."
+    Default-flag: false
+
+Items:
+  Locked:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ=="
+    Displayname: "&4&lLocked Pet"
+    Lore:
+      - "&7You need to unlock this"
+      - "&7pet to access the recipe."
+  Favorite-food:
+    Displayname: "&b&lFavorite food"
+    Lore:
+      - "&7I eat once per {TIME} uses!"
+    Lore-each:
+      - "&7I eat once per use!"
+  Frame:
+    #Available only 1.14+
+    #If you don't want frames disable it in "Options.Fill-empty-slots"
+    Custom-model-data: 0
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "betterpets.update"
+  #Message to send when update is found.
+  Message: "&5[BetterPets] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
